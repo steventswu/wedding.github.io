@@ -39,7 +39,7 @@
   "scripts": {
     "build": "yarn install && gatsby build",
     "dev": "gatsby develop",
-    "deploy": "gatsby build && git add public -f && git commit -m 'rebuild' && git push",
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "format": "prettier --write 'src/**/*.js'"
   },
   "devDependencies": {

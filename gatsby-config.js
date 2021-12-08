@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/wedding.steventing.com',
   siteMetadata: {
     title: 'S & T',
     author: 'Steven',
