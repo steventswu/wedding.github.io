@@ -1,9 +1,8 @@
 {
-  "name": "tristan-wedding",
-  "description": "Tristan Yang's wedding site",
+  "name": "steven-wedding",
+  "description": "Steven's wedding site",
   "version": "1.0.0",
-  "author": "Tristan",
-  "homepage": "https://steventswu.github.io/wedding/",
+  "author": "Steven",
   "dependencies": {
     "confetti-react": "^2.5.0",
     "gatsby": "^3.14.0",
@@ -45,9 +44,5 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.13.2",
     "prettier": "^2.4.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zerosoul/tristan-wedding.git"
   }
 }
