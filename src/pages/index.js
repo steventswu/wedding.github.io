@@ -41,11 +41,11 @@ export default function Index({ data }) {
       {dan && <Confetti dan={dan} closeDan={closeDan} />}
       <FirstView />
       <Couple popupDan={setDan} />
-      <Story />
-      {ready && <Gallery popupDan={setDan} />}
+      {/* <Story /> */}
+      {/* {ready && <Gallery popupDan={setDan} />} */}
       <Wedding />
       <Welcome />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

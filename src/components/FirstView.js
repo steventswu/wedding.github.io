@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 import { HiChevronDoubleDown } from 'react-icons/hi'
 import Confetti from 'confetti-react'
-import Timer from 'react-compound-timer'
-import Typed from 'typed.js'
 
-import FrameImage from '../assets/imgs/frame.png'
+import HomeImage from '../assets/imgs/first.jpg'
+
 const AniDown = keyframes`
     from{
         transform:translateY(-10px);
@@ -18,9 +17,9 @@ const AniDown = keyframes`
 `
 const StyledWrapper = styled.section`
   position: relative;
-  width:100%;
-  height:100vh;
-  background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500');
+  width: 100%;
+  height: 100vh;
+  background-image: url(${HomeImage});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,139 +27,47 @@ const StyledWrapper = styled.section`
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 769px) {
-      background-attachment: fixed;
-    }
-  .box{
-      z-index: 99;
-      margin-top: 1.2rem;
-      color: #000;
-      padding:.5rem;
-      background-color: #fff;
-      border-radius: .4rem;
-      box-shadow: 0 2px 8px #ccc;
-      background-image: url(${FrameImage});
-      background-repeat: no-repeat;
-      background-size: 90%;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      filter: opacity(0.8);
-      width: 3.8rem;
-      height: 3.8rem;
-      .title{
-          font-family: 'SP-F';
-          display: flex;
-          font-size: .48rem;
-          padding:.2rem 0;
-          margin-bottom: .2rem;
-          span{
-              white-space: nowrap;
-              strong{
-                  font-weight: bold;
-                  color: #be5678;
-              }
-          }
-      }
-      .date{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .time{
-              font-size: .16rem;
-              color:#999;
-              margin-top:.12rem ;
-          }
-          .countdown{
-              font-weight: 800;
-              font-size: .2rem;
-              color:#666;
-          }
-      }
+    background-attachment: fixed;
   }
- .down{
+  .down {
     position: absolute;
-    width:.44rem;
-    left:50%;
-    bottom:.1rem;
+    width: 0.44rem;
+    left: 50%;
+    bottom: 0.1rem;
     margin-left: -0.22rem;
     animation-direction: alternate-reverse;
-    animation:${AniDown} 1s infinite;
- }
-`;
-const now = new Date().getTime();
-const deadline = new Date(2021, 8, 15, 0, 0, 0).getTime()
-const initCountNum = deadline - now;
-// const initCountNum = 3000;
+    animation: ${AniDown} 1s infinite;
+  }
+`
+
 export default function FirstView() {
-    const [direction, setDirection] = useState(initCountNum > 0 ? "backward" : "forward");
-    const [size, setSize] = useState(null);
-    const container = useRef(null)
-    const el = useRef(null);
-    // Create reference to store the Typed instance itself
-    const typed = useRef(null);
-    useEffect(() => {
-        if (container) {
-            setTimeout(() => {
-
-                const { width, height } = getComputedStyle(container.current);
-                setSize({ width, height })
-            }, 500)
-        }
-    }, [])
-    useEffect(() => {
-        // elRef refers to the <span> rendered below
-        typed.current = new Typed(el.current, {
-            strings: [
-                '我们<strong>相遇</strong>',
-                '我们<strong>相知</strong>',
-                '我们<strong>相爱</strong>',
-                '我们<strong>结婚</strong>啦!',
-            ],
-            typeSpeed: 200,
-            backSpeed: 50,
-            backDelay: 1000,
-            loop: true
-        });
-
-        return () => {
-            // Make sure to destroy Typed instance during cleanup
-            // to prevent memory leaks
-            typed.current.destroy();
-        }
-    }, []);
-    return (
-        <StyledWrapper ref={container}>
-            {size && <Confetti width={size.width} height={size.height} className="mask" recycle={true} numberOfPieces={99} wind={0.01} gravity={0.1} opacity={.8} tweenDuration={8000} />}
-            <div className="box">
-                {/* <div className="married">我们结婚啦</div> */}
-                <div className="title" >
-                    💕<span ref={el}></span>💕
-                </div>
-                <div className="date">
-                    <div className="countdown">
-                        <Timer
-                            checkpoints={[
-                                {
-                                    time: 0,
-                                    callback: () => {
-                                        setDirection('forward')
-                                    },
-                                }]}
-                            initialTime={Math.abs(initCountNum)}
-                            direction={direction}
-                            formatValue={(value) => `${(value < 10 ? `0${value}` : value)}`}
-                        >
-                            <span className="num day"><Timer.Days />天<Timer.Hours />时<Timer.Minutes />分<Timer.Seconds />秒</span>
-                        </Timer>
-                    </div>
-                    <div className="time">2021.09.15</div>
-                </div>
-
-            </div>
-            <HiChevronDoubleDown className="down" />
-            {/* <img src={WelcomeImage} /> */}
-        </StyledWrapper>
-    )
+  const [size, setSize] = useState(null)
+  const container = useRef(null)
+  // Create reference to store the Typed instance itself
+  useEffect(() => {
+    if (container) {
+      setTimeout(() => {
+        const { width, height } = getComputedStyle(container.current)
+        setSize({ width, height })
+      }, 500)
+    }
+  }, [])
+  return (
+    <StyledWrapper ref={container}>
+      {size && (
+        <Confetti
+          width={size.width}
+          height={size.height}
+          className="mask"
+          recycle={true}
+          numberOfPieces={99}
+          wind={0.01}
+          gravity={0.1}
+          opacity={0.8}
+          tweenDuration={8000}
+        />
+      )}
+      <HiChevronDoubleDown className="down" />
+    </StyledWrapper>
+  )
 }
