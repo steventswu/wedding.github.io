@@ -1,58 +1,39 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Title from './SectionTitle'
-import FrameImage from '../assets/imgs/frame.png'
 import Steven from '../assets/imgs/steven.jpg'
 import Ting from '../assets/imgs/ting.jpg'
+import WeddingNote from '../assets/imgs/weddingnote.png'
+
+// background-image: url(${WeddingNote});
+// background-size: cover;
 
 const StyledWrapper = styled.section`
   width: 100%;
-  background-color: #fff;
+  background-color: #f9e4e4;
   padding: 0.3rem 0;
   .cp {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 414px) {
-      flex-direction: column;
-      margin: 0;
-    }
     .profile {
-      color: #222;
-      padding: 0.4rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-right: inherit.4rem;
       .pic {
-        width: 2.8rem;
-        height: 2.8rem;
+        width: 7.5rem;
+        height: 3.8rem;
+        background-image: url(${WeddingNote});
+        background-size: 100%, 100%;
         background-repeat: no-repeat;
-        background-size: 80%, 100%;
         background-position: center;
         overflow: hidden;
-        &.boy {
-          background-image: url(${Steven});
-          background-size: 75%, 100%;
-          background-position-y: 5px;
+        @media screen and (max-width: 414px) {
+          width: 6rem;
+          height: 2.8rem;
         }
-        &.girl {
-          background-image: url(${Ting});
-        }
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .name {
-        font-size: 0.4rem;
-        padding: 0.2rem 0;
-        margin: 0.2rem 0;
-      }
-      .intro {
-        font-size: 0.12rem;
-        white-space: nowrap;
       }
     }
   }
@@ -66,17 +47,10 @@ export default function Couple({}) {
   }, [])
   return (
     <StyledWrapper>
-      <Title title="新郎 · 新娘" />
       <div className="cp">
         <div className="profile">
-          <div className="pic boy" />
-          <div className="name">Steven Wu🤵🏻</div>
-          {/* <div className="intro">我有三样东西不可或缺：水，空气，以及{tips[pos].m}那个女人</div> */}
-        </div>
-        <div className="profile">
-          <div className="pic girl" />
-          <div className="name">Yi-Ting Ho👰🏻</div>
-          {/* <div className="intro">我有三样东西不可或缺：水，空气，以及{tips[pos].w}那男人</div> */}
+          <div className="pic" />
+          <div className="pic" />
         </div>
       </div>
     </StyledWrapper>
