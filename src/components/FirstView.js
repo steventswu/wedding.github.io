@@ -1,20 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
-import styled, { keyframes } from 'styled-components'
-import { HiChevronDoubleDown } from 'react-icons/hi'
+import styled from 'styled-components'
 import Confetti from 'confetti-react'
 
 import HomeImage from '../assets/imgs/first.jpg'
 
-const AniDown = keyframes`
-    from{
-        transform:translateY(-10px);
-        opacity:.1;
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-`
 const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
@@ -26,18 +15,9 @@ const StyledWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 769px) {
+  ${'' /* @media screen and (min-width: 769px) {
     background-attachment: fixed;
-  }
-  .down {
-    position: absolute;
-    width: 0.44rem;
-    left: 50%;
-    bottom: 0.1rem;
-    margin-left: -0.22rem;
-    animation-direction: alternate-reverse;
-    animation: ${AniDown} 1s infinite;
-  }
+  } */}
 `
 
 export default function FirstView() {
@@ -67,7 +47,6 @@ export default function FirstView() {
           tweenDuration={8000}
         />
       )}
-      <HiChevronDoubleDown className="down" />
     </StyledWrapper>
   )
 }

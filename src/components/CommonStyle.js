@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 const CommonStyle = createGlobalStyle`
  html{
-     font-size: 100px;
+    ${'' /* font-size: 100px; */}
+    font-family: 'Satisfy', cursive;
  }
  html,body{
     overflow-x: hidden;
@@ -34,10 +35,7 @@ const CommonStyle = createGlobalStyle`
     }
 }
 @font-face{
-    font-family: MyHelvetica;
-    src: local("Helvetica Neue");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Satisfy', cursive;
 }
 `
 
