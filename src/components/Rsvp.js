@@ -31,7 +31,14 @@ export default function Rsvp({}) {
     <StyledWrapper>
       <Title title="RSVP" />
       <div className="formWrapper">
-        <form name="RSVP" method="POST" data-netlify="true">
+        <form
+          name="RSVP"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="RSVP" />
           <label className="label">
             Your name<span>*</span>
           </label>
