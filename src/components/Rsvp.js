@@ -98,13 +98,13 @@ export default function Rsvp({}) {
           {status === 'email' && (
             <>
               <label className="label">E-mail</label>
-              <input name="email_address" id="email_address" required />
+              <input name="emailaddress" id="emailaddress" required />
             </>
           )}
           {status === 'paper' && (
             <>
               <label className="label">地址</label>
-              <input name="paper_address" id="paper_address" required />
+              <input name="paperaddress" id="paperaddress" required />
             </>
           )}
           <fieldset className="fieldset" required>
