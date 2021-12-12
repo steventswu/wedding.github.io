@@ -6,13 +6,13 @@ module.exports = {
     description: 'Steven Wedding Site'
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Satisfy`],
-        display: 'swap'
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [`Satisfy`],
+    //     display: 'swap'
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
