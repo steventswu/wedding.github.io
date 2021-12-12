@@ -96,10 +96,16 @@ export default function Rsvp({}) {
             <label for="none">不用唷，婚禮相關資訊我知道了</label>
           </fieldset>
           {status === 'email' && (
-            <input name="paper" id="paper" placeholder="E-mail" required />
+            <>
+              <label for="email_address">E-mail</label>
+              <input name="Email" id="email_address" required />
+            </>
           )}
           {status === 'paper' && (
-            <input name="paper" id="paper" placeholder="紙本" required />
+            <>
+              <label for="paper_address">地址</label>
+              <input name="Paper" id="paper_address" required />
+            </>
           )}
           <fieldset className="fieldset" required>
             <legend className="legend">
@@ -112,10 +118,10 @@ export default function Rsvp({}) {
               id="attend"
               required
             />
-            <label for="veg">出席，絕對到場！</label>
+            <label for="attend">出席，絕對到場！</label>
             <br />
             <input type="radio" name="Attend" value="busy" id="busy" required />
-            <label for="meat">無法出席，祝你們幸福美滿！</label>
+            <label for="busy">無法出席，祝你們幸福美滿！</label>
             <br />
           </fieldset>
           <label className="label">共幾個人出席 (人數請包含自己唷)</label>

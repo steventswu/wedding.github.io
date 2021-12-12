@@ -30,6 +30,7 @@ fieldset {
 }
 fieldset > label {
   display: inline;
+  line-height: initial;
 }
 
 button {
