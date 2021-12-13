@@ -69,6 +69,23 @@ export default function Rsvp({}) {
           </select>
           <fieldset className="fieldset" required>
             <legend className="legend">
+              是否會出席婚宴<span>*</span>
+            </legend>
+            <input
+              type="radio"
+              name="Attend"
+              value="attend"
+              id="attend"
+              required
+            />
+            <label for="attend">會，不見不散</label>
+            <br />
+            <input type="radio" name="Attend" value="busy" id="busy" required />
+            <label for="busy">無法出席，祝福你們！</label>
+            <br />
+          </fieldset>
+          <fieldset className="fieldset" required>
+            <legend className="legend">
               是否需要寄送喜貼<span>*</span>
             </legend>
             <input
@@ -108,7 +125,7 @@ export default function Rsvp({}) {
             className={`${status === 'email' ? 'show' : 'hide'}`}
             name="emailaddress"
             id="emailaddress"
-            required
+            required={status === 'email'}
           />
           <label className={`${status === 'paper' ? 'show' : 'hide'} label`}>
             地址
@@ -117,25 +134,8 @@ export default function Rsvp({}) {
             className={`${status === 'paper' ? 'show' : 'hide'}`}
             name="paperaddress"
             id="paperaddress"
-            required
+            required={status === 'paper'}
           />
-          <fieldset className="fieldset" required>
-            <legend className="legend">
-              是否會出席婚宴<span>*</span>
-            </legend>
-            <input
-              type="radio"
-              name="Attend"
-              value="attend"
-              id="attend"
-              required
-            />
-            <label for="attend">會，不見不散</label>
-            <br />
-            <input type="radio" name="Attend" value="busy" id="busy" required />
-            <label for="busy">無法出席，祝福你們！</label>
-            <br />
-          </fieldset>
           <label className="label">共幾個人出席 (包含自己唷)</label>
           <input type="number" name="People" id="people" min="1" />
           <label className="label">需要幾張兒童座椅</label>

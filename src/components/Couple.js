@@ -25,7 +25,7 @@ const StyledWrapper = styled.section`
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 428px) {
           width: 6rem;
           height: 2.8rem;
         }
@@ -38,7 +38,7 @@ const StyledWrapper = styled.section`
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 428px) {
           width: 6rem;
           height: 2.8rem;
         }
