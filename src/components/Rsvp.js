@@ -24,6 +24,12 @@ const StyledWrapper = styled.section`
     display: flex;
     justify-content: center;
   }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
 `
 export default function Rsvp({}) {
   const [status, setStatus] = useState()
@@ -95,22 +101,24 @@ export default function Rsvp({}) {
             />
             <label for="none">不用唷，婚禮相關資訊我知道了</label>
           </fieldset>
-          <label className="label">E-mail</label>
-          <input name="emailaddress" id="emailaddress" required />
-          <label className="label">地址</label>
-          <input name="paperaddress" id="paperaddress" required />
-          {/* {status === 'email' && (
-            <>
-              <label className="label">E-mail</label>
-              <input name="emailaddress" id="emailaddress" required />
-            </>
-          )}
-          {status === 'paper' && (
-            <>
-              <label className="label">地址</label>
-              <input name="paperaddress" id="paperaddress" required />
-            </>
-          )} */}
+          <label className={`${status === 'email' ? 'show' : 'hide'} label`}>
+            E-mail
+          </label>
+          <input
+            className={`${status === 'email' ? 'show' : 'hide'}`}
+            name="emailaddress"
+            id="emailaddress"
+            required
+          />
+          <label className={`${status === 'paper' ? 'show' : 'hide'} label`}>
+            地址
+          </label>
+          <input
+            className={`${status === 'paper' ? 'show' : 'hide'}`}
+            name="paperaddress"
+            id="paperaddress"
+            required
+          />
           <fieldset className="fieldset" required>
             <legend className="legend">
               是否會出席婚宴<span>*</span>
@@ -122,22 +130,22 @@ export default function Rsvp({}) {
               id="attend"
               required
             />
-            <label for="attend">出席，絕對到場！</label>
+            <label for="attend">會，不見不散</label>
             <br />
             <input type="radio" name="Attend" value="busy" id="busy" required />
-            <label for="busy">無法出席，祝你們幸福美滿！</label>
+            <label for="busy">無法出席，祝福你們！</label>
             <br />
           </fieldset>
-          <label className="label">共幾個人出席 (人數請包含自己唷)</label>
+          <label className="label">共幾個人出席 (包含自己唷)</label>
           <input type="number" name="People" id="people" min="1" />
           <label className="label">需要幾張兒童座椅</label>
           <input type="number" name="Infant" id="infant" min="0" />
           <fieldset className="fieldset">
             <legend className="legend">你...?</legend>
-            <input type="radio" name="meal" value="veg" id="veg" />
-            <label for="veg">吃素</label>
             <input type="radio" name="meal" value="meat" id="meat" checked />
             <label for="meat">吃葷</label>
+            <input type="radio" name="meal" value="veg" id="veg" />
+            <label for="veg">吃素</label>
           </fieldset>
           <label className="label">有什麼話想跟我們說嗎</label>
           <textarea name="coments" id="comments" rows="4"></textarea>
