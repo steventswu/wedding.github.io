@@ -95,7 +95,11 @@ export default function Rsvp({}) {
             />
             <label for="none">不用唷，婚禮相關資訊我知道了</label>
           </fieldset>
-          {status === 'email' && (
+          <label className="label">E-mail</label>
+          <input name="emailaddress" id="emailaddress" required />
+          <label className="label">地址</label>
+          <input name="paperaddress" id="paperaddress" required />
+          {/* {status === 'email' && (
             <>
               <label className="label">E-mail</label>
               <input name="emailaddress" id="emailaddress" required />
@@ -106,7 +110,7 @@ export default function Rsvp({}) {
               <label className="label">地址</label>
               <input name="paperaddress" id="paperaddress" required />
             </>
-          )}
+          )} */}
           <fieldset className="fieldset" required>
             <legend className="legend">
               是否會出席婚宴<span>*</span>
