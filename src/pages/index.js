@@ -23,7 +23,7 @@ export default function Index({ data }) {
       <FirstView />
       <Couple />
       <Rsvp />
-      {/* <Wedding /> */}
+      <Wedding />
     </div>
   )
 }

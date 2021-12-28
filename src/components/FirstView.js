@@ -11,7 +11,7 @@ const StyledWrapper = styled.section`
   background-image: url(${HomeImage});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 57%;
   display: flex;
   align-items: center;
   justify-content: center;
