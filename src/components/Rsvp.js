@@ -13,6 +13,9 @@ const StyledWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     font-size: 25px;
+    @media screen and (max-width: 414px) {
+      font-size: 15px;
+    }
   }
   .label,
   .legend,

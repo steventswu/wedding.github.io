@@ -22,8 +22,8 @@ export default function Index({ data }) {
       <Reset />
       <FirstView />
       <Couple />
-      <Rsvp />
       <Wedding />
+      <Rsvp />
     </div>
   )
 }

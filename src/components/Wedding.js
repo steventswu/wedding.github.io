@@ -39,7 +39,7 @@ const StyledWrapper = styled.section`
       font-size: 22px;
       border-radius: 5px;
       .title {
-        font-size: 0.4rem;
+        font-size: 0.8rem;
         width: 100%;
         text-align: center;
       }
@@ -63,6 +63,7 @@ const StyledWrapper = styled.section`
           .txt {
             white-space: nowrap;
             font-weight: 800;
+            font-size: 0.4rem;
           }
           @media screen and (max-width: 768px) {
             .label {
@@ -86,6 +87,10 @@ const StyledWrapper = styled.section`
       .imgMap {
         width: 395px;
         height: 265px;
+        @media screen and (max-width: 414px) {
+          width: 300px;
+          height: 175px;
+        }
       }
     }
   }

@@ -29,6 +29,10 @@ const StyledWrapper = styled.section`
           width: 5.3rem;
           height: 2.8rem;
         }
+        @media screen and (max-width: 414px) {
+          width: 7.5rem;
+          height: 3.8rem;
+        }
       }
       .pic2 {
         width: 7.5rem;
@@ -41,6 +45,10 @@ const StyledWrapper = styled.section`
         @media screen and (max-width: 428px) {
           width: 5.3rem;
           height: 2.8rem;
+        }
+        @media screen and (max-width: 414px) {
+          width: 7.5rem;
+          height: 3.8rem;
         }
       }
     }

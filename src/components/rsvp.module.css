@@ -23,6 +23,14 @@ textarea {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 414px) {
+  input:not([type='radio']),
+  select,
+  textarea {
+    font-size: 12px;
+  }
+}
+
 fieldset {
   border: 0;
   margin: 20px 0 0;
