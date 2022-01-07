@@ -16,10 +16,8 @@ const StyledWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  ${
-    '' /* @media screen and (min-width: 769px) {
-    background-attachment: fixed;
-  } */
+  @media screen and (max-width: 769px) {
+    background-attachment: initial;
   }
 `
 
