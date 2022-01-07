@@ -2,22 +2,25 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Confetti from 'confetti-react'
 
-import HomeImage from '../assets/imgs/first.jpg'
+import FamilyPortrait from '../assets/imgs/family.jpeg'
 
 const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(${HomeImage});
+  background-image: url(${FamilyPortrait});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 57%;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  ${'' /* @media screen and (min-width: 769px) {
+  ${
+    '' /* @media screen and (min-width: 769px) {
     background-attachment: fixed;
-  } */}
+  } */
+  }
 `
 
 export default function FirstView() {

@@ -64,6 +64,7 @@ const StyledWrapper = styled.section`
             white-space: nowrap;
             font-weight: 800;
             font-size: 0.4rem;
+            color: #000000;
           }
           @media screen and (max-width: 768px) {
             .label {
@@ -100,15 +101,15 @@ export default function Wedding() {
     <StyledWrapper>
       <div className="wrapper">
         <div className="box">
-          <h1 className="title">Ceremony/Wedding</h1>
           <ul className="items">
             <li className="item">
-              <span className="label">時間</span>
               <span className="txt">2022.03.26 18:00（星期六）</span>
             </li>
             <li className="item">
-              <span className="label">地點</span>
-              <span className="txt">In Between | 誠品行旅 | Eslite</span>
+              <span className="txt">誠品行旅 In Between</span>
+            </li>
+            <li className="item">
+              <span className="txt">110台北市信義區菸廠路98號2樓</span>
             </li>
           </ul>
           <div className="loc">

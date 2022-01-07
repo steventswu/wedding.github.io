@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { Reset } from 'styled-reset'
-import FirstView from '../components/FirstView'
-import Couple from '../components/Couple'
+import LandingPage from '../components/LandingPage'
+import CoverPhoto from '../components/CoverPhoto'
+import Word from '../components/Word'
+import Invitation from '../components/Invitation'
 import Wedding from '../components/Wedding'
 import Rsvp from '../components/Rsvp'
-import Welcome from '../components/Welcome'
 import CommonStyle from '../components/CommonStyle'
 
 export default function Index({ data }) {
@@ -20,8 +21,10 @@ export default function Index({ data }) {
       </Helmet>
       <CommonStyle />
       <Reset />
-      <FirstView />
-      <Couple />
+      <LandingPage />
+      <CoverPhoto />
+      <Word />
+      <Invitation />
       <Wedding />
       <Rsvp />
     </div>
