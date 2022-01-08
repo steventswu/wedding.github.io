@@ -2,30 +2,6 @@ html {
   font-size: 1.2vh;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-  /* overflow: hidden; */
-  background: linear-gradient(white, #e0d1d1);
-  box-shadow: inset 0 5vh 30vh 5vh #d6c2c2;
-  font-family: "Share Tech Mono", monospace;
-  color: white;
-  font-size: 2rem;
-}
-body:after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-image: radial-gradient(circle, white 40%, #e0d1d1); */
-  transform-origin: 50% 100%;
-  transform: scaleY(1.5) scaleX(1);
-  opacity: 0.5;
-}
-
 .center {
   position: absolute;
   top: 50%;
