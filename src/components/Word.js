@@ -16,7 +16,7 @@ const Words = styled.section`
   justify-content: center;
   @media screen and (max-width: 769px) {
     background-position: 53%;
-    height: 41vh;
+    height: 39vh;
   }
 `
 export default function Word({}) {

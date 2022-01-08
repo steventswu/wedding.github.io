@@ -1,17 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import SeaView from '../assets/imgs/seaview.jpg'
 import Map2Image from '../assets/imgs/map.hotel.png'
 
 const StyledWrapper = styled.section`
   z-index: 1;
   position: relative;
   width: 100%;
-  height: 96vh;
-  background-color: #fff;
+  height: 45vh;
   padding: 0.3rem 0;
-  background: url(${SeaView});
-  ${'' /* background: #c8d9e4; */}
+  background: #6c1d10;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
@@ -62,9 +59,9 @@ const StyledWrapper = styled.section`
           }
           .txt {
             white-space: nowrap;
-            font-weight: 800;
-            font-size: 0.4rem;
-            color: #000000;
+            font-weight: 500;
+            font-size: 0.3rem;
+            color: #fff;
           }
           @media screen and (max-width: 768px) {
             .label {
@@ -88,9 +85,9 @@ const StyledWrapper = styled.section`
       .imgMap {
         width: 395px;
         height: 265px;
-        @media screen and (max-width: 414px) {
-          width: 300px;
-          height: 175px;
+        @media screen and (max-width: 768px) {
+          width: 330px;
+          height: 220px;
         }
       }
     }
@@ -103,13 +100,13 @@ export default function Wedding() {
         <div className="box">
           <ul className="items">
             <li className="item">
-              <span className="txt">2022.03.26 18:00（星期六）</span>
+              <span className="txt">2022 - 03 - 26 18:00 (星期六)</span>
             </li>
             <li className="item">
               <span className="txt">誠品行旅 In Between</span>
             </li>
             <li className="item">
-              <span className="txt">110台北市信義區菸廠路98號2樓</span>
+              <span className="txt">110 台北市信義區菸廠路 98 號 2 樓</span>
             </li>
           </ul>
           <div className="loc">

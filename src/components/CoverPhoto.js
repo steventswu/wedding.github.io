@@ -18,6 +18,8 @@ const Cover = styled.section`
   justify-content: center;
   @media screen and (max-width: 769px) {
     background-attachment: initial;
+    background-position: 63%;
+    height: 53vh;
   }
 `
 

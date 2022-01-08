@@ -7,6 +7,7 @@ import CoverPhoto from '../components/CoverPhoto'
 import Word from '../components/Word'
 import Invitation from '../components/Invitation'
 import Wedding from '../components/Wedding'
+import Gallery from '../components/Gallery'
 import Rsvp from '../components/Rsvp'
 import CommonStyle from '../components/CommonStyle'
 
@@ -26,6 +27,7 @@ export default function Index({ data }) {
       <Word />
       <Invitation />
       <Wedding />
+      <Gallery />
       <Rsvp />
     </div>
   )
