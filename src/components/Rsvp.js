@@ -47,6 +47,7 @@ export default function Rsvp({}) {
       <div className="formWrapper">
         <form
           name="RSVP"
+          action="/success/"
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"

@@ -8,7 +8,7 @@ const StyledWrapper = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   padding: 0.3rem 0;
   background: #6c1d10;
   background-repeat: no-repeat;
