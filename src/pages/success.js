@@ -12,7 +12,7 @@ export default function Success() {
         <div className="balloon"></div>
       </div>
       <div className="center">
-        <h2>謝謝你們填寫表格</h2>
+        <h2>感謝你們撥空填寫</h2>
       </div>
       <div className="holderFront">
         <div className="balloon"></div>
