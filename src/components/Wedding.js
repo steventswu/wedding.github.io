@@ -5,8 +5,10 @@ import Map2Image from '../assets/imgs/map.hotel.png'
 const StyledWrapper = styled.section`
   z-index: 1;
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   padding: 0.3rem 0;
   background: #6c1d10;
   background-repeat: no-repeat;
@@ -59,13 +61,13 @@ const StyledWrapper = styled.section`
           }
           .txt {
             white-space: nowrap;
-            font-weight: 500;
-            font-size: 0.3rem;
+            font-weight: bold;
+            font-size: 0.5rem;
             color: #fff;
           }
           @media screen and (max-width: 768px) {
-            .label {
-              margin-bottom: 0.12rem;
+            .txt {
+              font-size: 0.3rem;
             }
           }
         }
@@ -83,14 +85,17 @@ const StyledWrapper = styled.section`
         }
       }
       .imgMap {
-        width: 395px;
-        height: 265px;
+        width: 500px;
+        height: 300px;
         @media screen and (max-width: 768px) {
           width: 330px;
           height: 220px;
         }
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+    height: 45vh;
   }
 `
 export default function Wedding() {
@@ -100,7 +105,7 @@ export default function Wedding() {
         <div className="box">
           <ul className="items">
             <li className="item">
-              <span className="txt">2022 - 03 - 26 18:00 (星期六)</span>
+              <span className="txt">2022 - 03 - 26 (Sat.) 18:00</span>
             </li>
             <li className="item">
               <span className="txt">誠品行旅 In Between</span>

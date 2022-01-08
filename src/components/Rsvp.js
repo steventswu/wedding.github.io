@@ -58,7 +58,7 @@ export default function Rsvp({}) {
           </label>
           <input name="Name" id="name" required />
           <label className="label">
-            和新人關係<span>*</span>
+            您是...<span>*</span>
           </label>
           <select name="Guests" id="guests" required>
             <option value="" selected disabled>
@@ -66,13 +66,15 @@ export default function Rsvp({}) {
             </option>
             <option value="steven-friend">Steven 朋友</option>
             <option value="steven-family">Steven 家人</option>
+            <option value="steven-parents-friend">吳爸媽朋友</option>
             <option value="ting-friend">Ting 朋友</option>
             <option value="ting-friend">Ting 家人</option>
+            <option value="ting-parents-friend">何爸媽朋友</option>
             <option value="common-friend">共同朋友</option>
           </select>
           <fieldset className="fieldset" required>
             <legend className="legend">
-              是否會出席婚宴<span>*</span>
+              3/26 有空來我們的婚禮嗎<span>*</span>
             </legend>
             <input
               type="radio"
@@ -81,15 +83,15 @@ export default function Rsvp({}) {
               id="attend"
               required
             />
-            <label for="attend">會，不見不散</label>
+            <label for="attend">會呦，不見不散!</label>
             <br />
             <input type="radio" name="Attend" value="busy" id="busy" required />
-            <label for="busy">無法出席，祝福你們！</label>
+            <label for="busy">那天有事，祝福你們!</label>
             <br />
           </fieldset>
           <fieldset className="fieldset" required>
             <legend className="legend">
-              是否需要寄送喜貼<span>*</span>
+              是否需要喜帖<span>*</span>
             </legend>
             <input
               type="radio"
@@ -122,7 +124,7 @@ export default function Rsvp({}) {
             <label for="none">不用唷，婚禮相關資訊我知道了</label>
           </fieldset>
           <label className={`${status === 'email' ? 'show' : 'hide'} label`}>
-            E-mail
+            電子信箱
           </label>
           <input
             className={`${status === 'email' ? 'show' : 'hide'}`}
@@ -131,7 +133,7 @@ export default function Rsvp({}) {
             required={status === 'email'}
           />
           <label className={`${status === 'paper' ? 'show' : 'hide'} label`}>
-            地址
+            收件地址
           </label>
           <input
             className={`${status === 'paper' ? 'show' : 'hide'}`}
@@ -141,17 +143,17 @@ export default function Rsvp({}) {
           />
           <label className="label">共幾個人出席 (包含自己唷)</label>
           <input type="number" name="People" id="people" min="1" />
-          <label className="label">需要幾張兒童座椅</label>
+          <label className="label">另外需要幾張兒童座椅</label>
           <input type="number" name="Infant" id="infant" min="0" />
           <fieldset className="fieldset">
-            <legend className="legend">你...?</legend>
+            <legend className="legend">您...</legend>
             <input type="radio" name="meal" value="meat" id="meat" checked />
             <label for="meat">吃葷</label>
             <input type="radio" name="meal" value="veg" id="veg" />
             <label for="veg">吃素</label>
           </fieldset>
           <label className="label">有什麼話想跟我們說嗎</label>
-          <textarea name="coments" id="comments" rows="4"></textarea>
+          <textarea name="comments" id="comments" rows="4"></textarea>
           <div className="submitButton">
             <button name="submit" class="submit" type="submit">
               Submit
