@@ -12,12 +12,10 @@ const Cover = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 57%;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 769px) {
-    background-attachment: initial;
     background-position: 63%;
     height: 53vh;
   }
