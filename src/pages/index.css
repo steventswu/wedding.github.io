@@ -20,7 +20,7 @@ body:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, white 40%, #e0d1d1);
+  /* background-image: radial-gradient(circle, white 40%, #e0d1d1); */
   transform-origin: 50% 100%;
   transform: scaleY(1.5) scaleX(1);
   opacity: 0.5;
@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-size: 9rem;
+  font-size: 4rem;
   margin: 0;
   padding: 0;
   color: #ff6666;
@@ -176,39 +176,39 @@ h1, h2 {
   border-radius: 1rem;
 }
 
-.holder.back {
+.holderBack {
   position: relative;
   z-index: 2;
 }
-.holder.back .balloon:nth-child(1) {
+.holderBack .balloon:nth-child(1) {
   left: 50%;
   -webkit-animation: float2 9.5s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: float2 9.5s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
-.holder.back .balloon:nth-child(2) {
+.holderBack .balloon:nth-child(2) {
   left: 20%;
   -webkit-animation: float1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: float1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
 }
-.holder.back .balloon:nth-child(3) {
+.holderBack .balloon:nth-child(3) {
   left: 90%;
   -webkit-animation: float3 10.5s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: float3 10.5s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 7.7s;
           animation-delay: 7.7s;
 }
-.holder.back .balloon:nth-child(4) {
+.holderBack .balloon:nth-child(4) {
   left: 70%;
   -webkit-animation: float1 9s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: float1 9s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
-.holder.back .balloon:nth-child(5) {
+.holderBack .balloon:nth-child(5) {
   left: 35%;
   -webkit-animation: float2 10.2s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: float2 10.2s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -216,42 +216,42 @@ h1, h2 {
           animation-delay: 5.6s;
 }
 
-.holder.front {
+.holderFront {
   position: relative;
   z-index: 4;
 }
-.holder.front .balloon {
+.holderFront .balloon {
   box-shadow: inset -0.5rem -0.5rem 5rem -0.5rem #c99c9c, 8rem 8rem 4rem rgba(153, 102, 102, 0.2);
 }
-.holder.front .balloon:nth-child(1) {
+.holderFront .balloon:nth-child(1) {
   left: 80%;
   -webkit-animation: floatfront1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: floatfront1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 2.8s;
           animation-delay: 2.8s;
 }
-.holder.front .balloon:nth-child(2) {
+.holderFront .balloon:nth-child(2) {
   left: 35%;
   -webkit-animation: floatfront1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: floatfront1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
-.holder.front .balloon:nth-child(3) {
+.holderFront .balloon:nth-child(3) {
   left: 7%;
   -webkit-animation: floatfront3 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: floatfront3 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 7.7s;
           animation-delay: 7.7s;
 }
-.holder.front .balloon:nth-child(4) {
+.holderFront .balloon:nth-child(4) {
   left: 46%;
   -webkit-animation: floatfront2 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: floatfront2 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
   -webkit-animation-delay: 6.3s;
           animation-delay: 6.3s;
 }
-.holder.front .balloon:nth-child(5) {
+.holderFront .balloon:nth-child(5) {
   left: 75%;
   -webkit-animation: floatfront1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
           animation: floatfront1 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
