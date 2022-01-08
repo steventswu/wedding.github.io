@@ -15,8 +15,8 @@ const Invite = styled.section`
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 769px) {
-    background-position: 50%;
-    height: 43vh;
+    background-position: 51%;
+    height: 75vh;
   }
 `
 export default function Invitation({}) {
