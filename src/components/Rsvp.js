@@ -54,14 +54,10 @@ export default function Rsvp({}) {
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="RSVP" />
-          <label className="label">
-            姓名<span>*</span>
-          </label>
-          <input name="Name" id="name" required />
-          <label className="label">
-            您是...<span>*</span>
-          </label>
-          <select name="Guests" id="guests" required>
+          <label className="label">姓名</label>
+          <input name="Name" id="name" />
+          <label className="label">您是...</label>
+          <select name="Guests" id="guests">
             <option value="" selected disabled>
               請選擇
             </option>
@@ -73,34 +69,23 @@ export default function Rsvp({}) {
             <option value="ting-parents-friend">何爸媽朋友</option>
             <option value="common-friend">共同朋友</option>
           </select>
-          <fieldset className="fieldset" required>
-            <legend className="legend">
-              3/26 有空來我們的婚禮嗎<span>*</span>
-            </legend>
-            <input
-              type="radio"
-              name="Attend"
-              value="attend"
-              id="attend"
-              required
-            />
+          <fieldset className="fieldset">
+            <legend className="legend">3/26 有空來我們的婚禮嗎</legend>
+            <input type="radio" name="Attend" value="attend" id="attend" />
             <label for="attend">會呦，不見不散!</label>
             <br />
-            <input type="radio" name="Attend" value="busy" id="busy" required />
-            <label for="busy">那天有事，祝福你們!</label>
+            <input type="radio" name="Attend" value="busy" id="busy" />
+            <label for="absence">那天有事，祝福你們!</label>
             <br />
           </fieldset>
-          <fieldset className="fieldset" required>
-            <legend className="legend">
-              是否需要喜帖<span>*</span>
-            </legend>
+          <fieldset className="fieldset">
+            <legend className="legend">是否需要喜帖</legend>
             <input
               type="radio"
               name="Card"
               value="email"
               id="email"
               onClick={() => radioHandler('email')}
-              required
             />
             <label for="email">需要，請寄電子喜帖給我</label>
             <br />
@@ -110,7 +95,6 @@ export default function Rsvp({}) {
               value="paper"
               id="paper"
               onClick={() => radioHandler('paper')}
-              required
             />
             <label for="paper">需要，請寄紙本喜帖給我</label>
             <br />
@@ -120,7 +104,6 @@ export default function Rsvp({}) {
               value="none"
               id="none"
               onClick={() => radioHandler(undefined)}
-              required
             />
             <label for="none">不用唷，婚禮相關資訊我知道了</label>
           </fieldset>
@@ -131,7 +114,6 @@ export default function Rsvp({}) {
             className={`${status === 'email' ? 'show' : 'hide'}`}
             name="emailaddress"
             id="emailaddress"
-            required={status === 'email'}
           />
           <label className={`${status === 'paper' ? 'show' : 'hide'} label`}>
             收件地址
@@ -140,7 +122,6 @@ export default function Rsvp({}) {
             className={`${status === 'paper' ? 'show' : 'hide'}`}
             name="paperaddress"
             id="paperaddress"
-            required={status === 'paper'}
           />
           <label className="label">共幾個人出席 (包含自己唷)</label>
           <input type="number" name="People" id="people" min="1" />
