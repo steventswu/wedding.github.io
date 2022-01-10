@@ -65,7 +65,7 @@ export default function Rsvp({}) {
             <option value="steven-family">Steven 家人</option>
             <option value="steven-parents-friend">吳爸媽朋友</option>
             <option value="ting-friend">Ting 朋友</option>
-            <option value="ting-friend">Ting 家人</option>
+            <option value="ting-family">Ting 家人</option>
             <option value="ting-parents-friend">何爸媽朋友</option>
             <option value="common-friend">共同朋友</option>
           </select>
