@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Confetti from 'confetti-react'
 
-import FamilyPortrait from '../assets/imgs/family.jpeg'
+import FamilyPortrait from '../assets/angel-imgs/coverphoto.jpg'
 
 const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 245vh;
   background-image: url(${FamilyPortrait});
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,6 +15,9 @@ const StyledWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 769px) {
+    height: 100vh;
+  }
 `
 
 export default function FirstView() {

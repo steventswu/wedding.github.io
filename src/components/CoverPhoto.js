@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Confetti from 'confetti-react'
 
-import HomeImage from '../assets/imgs/first.jpg'
+import HomeImage from '../assets/angel-imgs/photo1.jpeg'
 
 const Cover = styled.section`
   position: relative;

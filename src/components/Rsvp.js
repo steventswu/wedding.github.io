@@ -61,16 +61,12 @@ export default function Rsvp({}) {
             <option value="" selected disabled>
               請選擇
             </option>
-            <option value="steven-friend">Steven 朋友</option>
-            <option value="steven-family">Steven 家人</option>
-            <option value="steven-parents-friend">吳爸媽朋友</option>
-            <option value="ting-friend">Ting 朋友</option>
-            <option value="ting-family">Ting 家人</option>
-            <option value="ting-parents-friend">何爸媽朋友</option>
+            <option value="gary">男方親友</option>
+            <option value="angel">女方親友</option>
             <option value="common-friend">共同朋友</option>
           </select>
           <fieldset className="fieldset">
-            <legend className="legend">3/26 有空來我們的婚禮嗎</legend>
+            <legend className="legend">5/8 有空來我們的婚禮嗎</legend>
             <input type="radio" name="Attend" value="attend" id="attend" />
             <label for="attend">會呦，不見不散!</label>
             <br />

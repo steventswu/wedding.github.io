@@ -24,7 +24,6 @@ export default function Index({ data }) {
       <Reset />
       <LandingPage />
       <CoverPhoto />
-      <Word />
       <Invitation />
       <Wedding />
       <Gallery />

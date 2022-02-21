@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Map2Image from '../assets/imgs/map.hotel.png'
+import Map2Image from '../assets/angel-imgs/map-hotel.png'
 
 const StyledWrapper = styled.section`
   z-index: 1;
@@ -10,7 +10,7 @@ const StyledWrapper = styled.section`
   width: 100%;
   height: 65vh;
   padding: 0.3rem 0;
-  background: #6c1d10;
+  background: #c79fd0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
@@ -105,20 +105,20 @@ export default function Wedding() {
         <div className="box">
           <ul className="items">
             <li className="item">
-              <span className="txt">2022 - 03 - 26 (Sat.) 18:00</span>
+              <span className="txt">2022 - 05 - 08 星期日 17:00</span>
             </li>
             <li className="item">
-              <span className="txt">誠品行旅 In Between</span>
+              <span className="txt">台中林酒店《3樓國際聽》</span>
             </li>
             <li className="item">
-              <span className="txt">110 台北市信義區菸廠路 98 號 2 樓</span>
+              <span className="txt">台中市西屯區朝富路99號</span>
             </li>
           </ul>
           <div className="loc">
             <a
               className="map"
               target="_blank"
-              href={'https://goo.gl/maps/q45X54VxhaM3QwT76'}
+              href={'https://goo.gl/maps/ZJC1opMbz59pJCwA8'}
             >
               <img className="imgMap" src={Map2Image} alt="map" />
             </a>
