@@ -10,21 +10,21 @@ const CommonStyle = createGlobalStyle`
     }
  }
  @media screen and (max-width: 1680px) {
-    html {
+    html,body {
         font-family: sans-serif;
         font-size:80px
     }
 }
 
 @media screen and (max-width: 736px) {
-    html {
+    html,body {
         font-family: sans-serif;
         font-size:80px
     }
 }
 
 @media screen and (max-width: 414px) {
-    html {
+    html,body {
         font-family: sans-serif;
         font-size:50px
     }
