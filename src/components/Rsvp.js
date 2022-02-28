@@ -14,6 +14,7 @@ const StyledWrapper = styled.section`
     align-items: center;
     font-size: 25px;
     @media screen and (max-width: 414px) {
+      font-family: sans-serif;
       font-size: 15px;
     }
   }
@@ -66,7 +67,7 @@ export default function Rsvp({}) {
             <option value="common-friend">共同朋友</option>
           </select>
           <fieldset className="fieldset">
-            <legend className="legend">5/8 有空來我們的婚禮嗎</legend>
+            <legend className="legend">5/8 有空來我們的婚禮嗎 ?</legend>
             <input type="radio" name="Attend" value="attend" id="attend" />
             <label for="attend">會呦，不見不散!</label>
             <br />
@@ -75,7 +76,7 @@ export default function Rsvp({}) {
             <br />
           </fieldset>
           <fieldset className="fieldset">
-            <legend className="legend">是否需要喜帖</legend>
+            <legend className="legend">是否需要喜帖 ?</legend>
             <input
               type="radio"
               name="Card"
@@ -130,7 +131,7 @@ export default function Rsvp({}) {
             <input type="radio" name="meal" value="veg" id="veg" />
             <label for="veg">吃素</label>
           </fieldset>
-          <label className="label">有什麼話想跟我們說嗎</label>
+          <label className="label">有什麼話想跟我們說嗎 ?</label>
           <textarea name="comments" id="comments" rows="4"></textarea>
           <div className="submitButton">
             <button name="submit" class="submit" type="submit">

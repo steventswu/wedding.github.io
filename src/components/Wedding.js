@@ -67,6 +67,7 @@ const StyledWrapper = styled.section`
           }
           @media screen and (max-width: 768px) {
             .txt {
+              font-family: sans-serif;
               font-size: 0.3rem;
             }
           }
