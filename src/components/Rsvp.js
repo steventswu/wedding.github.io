@@ -34,6 +34,9 @@ const StyledWrapper = styled.section`
   .hide {
     display: none;
   }
+  @media screen and (max-width: 414px) {
+    font-family: sans-serif;
+  }
 `
 export default function Rsvp({}) {
   const [status, setStatus] = useState()

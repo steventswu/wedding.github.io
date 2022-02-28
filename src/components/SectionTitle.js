@@ -8,6 +8,9 @@ const StyledTitle = styled.h2`
   font-size: 0.4rem;
   color: #434142;
   font-weight: 800;
+  @media screen and (max-width: 414px) {
+    font-family: sans-serif;
+  }
 `
 export default function SectionTitle({ title = '' }) {
   return <StyledTitle>{title}</StyledTitle>
