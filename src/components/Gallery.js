@@ -14,7 +14,7 @@ const GalleryPhoto = styled.section`
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 769px) {
-    background-position-y: 80%;
+    background-position-y: 65%;
     height: 42vh;
   }
 `

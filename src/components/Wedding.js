@@ -105,10 +105,10 @@ export default function Wedding() {
         <div className="box">
           <ul className="items">
             <li className="item">
-              <span className="txt">2022 - 05 - 08 星期日 17:00</span>
+              <span className="txt">2022.05.08 星期日 18:00</span>
             </li>
             <li className="item">
-              <span className="txt">台中林酒店《3樓國際聽》</span>
+              <span className="txt">台中林酒店 The Lin 《3F樓國際聽》</span>
             </li>
             <li className="item">
               <span className="txt">台中市西屯區朝富路99號</span>

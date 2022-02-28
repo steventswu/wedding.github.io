@@ -22,7 +22,7 @@ export default function Index({ data }) {
       </Helmet>
       <CommonStyle />
       <Reset />
-      <LandingPage />
+      {/* <LandingPage /> */}
       <CoverPhoto />
       <Invitation />
       <Wedding />
