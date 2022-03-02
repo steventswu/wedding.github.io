@@ -19,7 +19,13 @@ export default function Index({ data }) {
     <div>
       <Helmet
         title={siteTitle}
-        meta={[{ name: 'description', content: `${siteDescription}` }]}
+        meta={[
+          { name: 'description', content: `${siteDescription}` },
+          {
+            property: 'og:image',
+            content: '/pwa-icons/kai.jpeg'
+          }
+        ]}
         link={[
           { rel: 'shortcut icon', type: 'image/jpeg', href: `${favicon}` }
         ]}
