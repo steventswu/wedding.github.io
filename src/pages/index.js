@@ -22,13 +22,12 @@ export default function Index({ data }) {
         meta={[
           { name: 'description', content: `${siteDescription}` },
           {
-            property: 'image',
-            content: `${favicon}`
+            property: 'og:image',
+            content:
+              'https://raw.githubusercontent.com/adamjarling/furbaby/master/src/images/og-image.png'
           }
         ]}
-        link={[
-          { rel: 'shortcut icon', type: 'image/jpeg', href: `${favicon}` }
-        ]}
+        link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
       />
       {/* <title>{siteTitle}</title> */}
       {/* <meta name="description" content={siteDescription} />
