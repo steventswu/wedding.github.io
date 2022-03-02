@@ -22,7 +22,7 @@ export default function Index({ data }) {
         meta={[
           { name: 'description', content: `${siteDescription}` },
           {
-            property: 'og:image',
+            property: 'image',
             content: `${favicon}`
           }
         ]}
