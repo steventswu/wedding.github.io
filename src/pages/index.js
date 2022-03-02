@@ -23,7 +23,7 @@ export default function Index({ data }) {
           { name: 'description', content: `${siteDescription}` },
           {
             property: 'og:image',
-            content: '/pwa-icons/kai.jpeg'
+            content: `${favicon}`
           }
         ]}
         link={[
