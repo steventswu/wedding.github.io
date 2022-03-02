@@ -10,17 +10,23 @@ import Wedding from '../components/Wedding'
 import Gallery from '../components/Gallery'
 import Rsvp from '../components/Rsvp'
 import CommonStyle from '../components/CommonStyle'
+import favicon from '../../static/pwa-icons/kai.jpeg'
 
 export default function Index({ data }) {
   const { title: siteTitle, description: siteDescription } =
     data.site.siteMetadata
   return (
     <div>
-      <Helmet>
-        <title>{siteTitle}</title>
-        <meta name="description" content={siteDescription} />
-        <meta name="icon" href="/static/pwa-icons/kai.png" />
-      </Helmet>
+      <Helmet
+        title={siteTitle}
+        meta={[{ name: 'description', content: `${siteDescription}` }]}
+        link={[
+          { rel: 'shortcut icon', type: 'image/jpeg', href: `${favicon}` }
+        ]}
+      />
+      {/* <title>{siteTitle}</title> */}
+      {/* <meta name="description" content={siteDescription} />
+      </Helmet> */}
       <CommonStyle />
       <Reset />
       {/* <LandingPage /> */}
