@@ -19,6 +19,7 @@ export default function Index({ data }) {
       <Helmet>
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
+        <meta name="icon" href="/static/pwa-icons/kai.png" />
       </Helmet>
       <CommonStyle />
       <Reset />
