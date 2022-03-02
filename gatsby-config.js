@@ -35,7 +35,7 @@ module.exports = {
             // directory in /public during development and build, so
             // assuming your favicons are in /static/favicons,
             // you can reference them here
-            // src: `/pwa-icons/kai.jpeg`,
+            src: `/pwa-icons/kai.jpeg`,
             type: `image/jpeg`
           }
         ]
