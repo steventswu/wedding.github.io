@@ -36,6 +36,7 @@ module.exports = {
             // assuming your favicons are in /static/favicons,
             // you can reference them here
             src: `/pwa-icons/kai.jpeg`,
+            sizes: '192x192',
             type: `image/jpeg`
           }
         ]
