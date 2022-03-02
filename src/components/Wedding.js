@@ -109,7 +109,7 @@ export default function Wedding() {
               <span className="txt">2022.05.08 星期日 18:00</span>
             </li>
             <li className="item">
-              <span className="txt">台中林酒店 The Lin 《3F國際聽》</span>
+              <span className="txt">台中林酒店 The LIN 《3F國際廳》</span>
             </li>
             <li className="item">
               <span className="txt">台中市西屯區朝富路99號</span>

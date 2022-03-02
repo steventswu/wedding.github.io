@@ -29,6 +29,16 @@ module.exports = {
         background_color: '#1b1f22',
         theme_color: '#7f828d',
         display: 'minimal-ui',
+        icons: [
+          {
+            // Everything in /static will be copied to an equivalent
+            // directory in /public during development and build, so
+            // assuming your favicons are in /static/favicons,
+            // you can reference them here
+            // src: `/pwa-icons/kai.jpeg`,
+            type: `image/jpeg`
+          }
+        ]
       }
     },
     'gatsby-plugin-offline',
