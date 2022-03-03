@@ -23,8 +23,7 @@ export default function Index({ data }) {
           { name: 'description', content: `${siteDescription}` },
           {
             property: 'og:image',
-            content:
-              'https://raw.githubusercontent.com/adamjarling/furbaby/master/src/images/og-image.png'
+            content: `${favicon}`
           }
         ]}
         link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
