@@ -23,7 +23,7 @@ export default function Index({ data }) {
           { name: 'description', content: `${siteDescription}` },
           {
             property: 'og:image',
-            content: `${favicon}`
+            content: `https://garyandangelswedding.com${favicon}`
           }
         ]}
         link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
