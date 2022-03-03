@@ -10,7 +10,7 @@ import Wedding from '../components/Wedding'
 import Gallery from '../components/Gallery'
 import Rsvp from '../components/Rsvp'
 import CommonStyle from '../components/CommonStyle'
-import favicon from '../../static/pwa-icons/kai2.png'
+import favicon from '../../static/pwa-icons/kai.jpeg'
 
 export default function Index({ data }) {
   const { title: siteTitle, description: siteDescription } =
