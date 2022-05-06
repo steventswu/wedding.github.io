@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 import Confetti from '../components/Confetti'
 
 export default function Index({ data }) {
-  // test test
+  // test #2 
   const [ready, setReady] = useState(false);
   const [dan, setDan] = useState(null)
   const {
